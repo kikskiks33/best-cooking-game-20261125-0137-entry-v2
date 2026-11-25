@@ -1,0 +1,24 @@
+/* Warung Kilat — halaman pembungkus canvas. Gamenya sendiri digambar
+   di canvas 1280x720; CSS ini cuma menengahkan dan memberi latar gelap. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #241a12;
+  min-height: 100vh;
+}
+
+#panggung {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+canvas#warung {
+  width: min(1280px, 100vw);
+  height: auto;
+  display: block;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
